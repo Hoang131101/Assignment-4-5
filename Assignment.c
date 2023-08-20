@@ -83,13 +83,14 @@ int main(){
             printf("\n Name: %s", item[i].name);
             printf("\n price: %.2f", item[i].price);
             Type1(type[i]);
-            if(type[i] ==  2){
-                printf("\n Weight: %.2f",item[i].Weight);
-            } 
-            else
-            {
-                printf("\n size: %d", item[i].size);
-            }
+            // if(type[i] ==  2){
+            //     printf("\n Weight: %.2f",item[i].Weight);
+            // } 
+            // else
+            // {
+            //     printf("\n size: %d", item[i].size);
+            // }
+            printf((type[i] == 2) ? "\n Weight: %.2f" : "\n size: %d", (type[i] == 2) ? item[i].Weight : item[i].size);
         }
     }
     return 0;
